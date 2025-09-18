@@ -1,0 +1,17 @@
+:root{--rsms-brand:#00b0a4}.rsms-rtl{direction:rtl;text-align:right}.rsms-title{color:var(--rsms-brand);margin-bottom:16px}.rsms-card{background:#fff;padding:16px;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,.06);margin-bottom:16px;border:1px solid rgba(0,0,0,.05)}.rsms-input{min-width:280px;padding:8px 10px;border:1px solid #e1e1e1;border-radius:8px}.rsms-input.small{min-width:140px}.rsms-textarea{width:100%;padding:10px;border:1px solid #e1e1e1;border-radius:8px}button.button-primary{background:var(--rsms-brand)!important;border-color:var(--rsms-brand)!important}
+@font-face{font-family:'ReadyFont';src:url('../assets/fonts/readyfont.woff2') format('woff2');font-weight:normal;font-style:normal;font-display:swap}
+body, .wrap, .rsms-rtl, .rsms-card, .rsms-input, .rsms-textarea, table, th, td, button {font-family:'ReadyFont', Tahoma, sans-serif}
+table.widefat, table.widefat thead, table.widefat tbody {border-radius:12px; overflow:hidden}
+input, select, textarea, .button, .rsms-card {border-radius:12px}
+
+/* SMS Camp v1.3 UI tweaks */
+.rsms-btn, .button, .button-primary { border-radius:16px !important; padding:10px 18px !important; font-size:14.5px !important; }
+input, select, textarea { border-radius:14px !important; }
+.widefat { border-radius:14px; overflow:hidden; }
+.rsms-pill { border-radius:999px; padding:6px 12px; background:#eef8f7; display:inline-block; }
+.rsms-logo { height:28px; vertical-align:middle; margin-left:8px; }
+
+/* Ensure ReadyFont on all headings and UI */
+h1,h2,h3,h4,h5,h6, p, div, span, label, table, th, td, input, select, textarea, button, .wrap, body {
+  font-family:'ReadyFont', Tahoma, sans-serif !important;
+}

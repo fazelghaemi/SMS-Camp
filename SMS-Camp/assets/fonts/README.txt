@@ -1,0 +1,1 @@
+Place your custom WOFF2 font here as 'readyfont.woff2'. The admin UI will use it automatically.

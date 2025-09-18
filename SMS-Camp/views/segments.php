@@ -17,7 +17,20 @@ $items=$wpdb->get_results("SELECT * FROM $tbl ORDER BY id DESC", ARRAY_A) ?: [];
       </table>
       <p><button class="button button-primary" name="rsms_segment_save" value="1">ذخیره</button></p>
     </form>
+  
+  <div class="rsms-card" style="border-radius:12px">
+    <h2>راهنمای تعریف سگمنت (MVP)</h2>
+    <p>ساختار JSON شامل <code>logic</code> (AND/OR) و آرایه <code>rules</code> است. فیلدهای متداول:</p>
+    <ul>
+      <li><b>days_since_last_order</b> : تعداد روز از آخرین خرید</li>
+      <li><b>orders_count</b> : تعداد سفارش</li>
+      <li><b>total_spent</b> : مجموع خرید</li>
+      <li><b>bought_category</b> : اسلاگ دسته کالا</li>
+      <li><b>city</b> : شهر در آدرس صورت‌حساب</li>
+    </ul>
+    <pre style="background:#f7f7f7;border-radius:12px;padding:10px;overflow:auto">{ "logic":"AND","rules":[{"field":"days_since_last_order","op":"<=","value":30},{"field":"orders_count","op":">=","value":3},{"field":"total_spent","op":">=","value":5000000}] }</pre>
   </div>
+</div>
   <h2>لیست سگمنت‌ها</h2>
   <table class="widefat striped"><thead><tr><th>ID</th><th>نام</th><th>اسلاگ</th><th>بروزرسانی</th></tr></thead><tbody>
     <?php foreach($items as $it){ echo '<tr><td>'.intval($it['id']).'</td><td>'.esc_html($it['name']).'</td><td>'.esc_html($it['slug']).'</td><td>'.esc_html($it['updated_at']).'</td></tr>'; } ?>
