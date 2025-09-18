@@ -120,7 +120,7 @@ if (isset($_POST['rsms_campaign_enqueue']) && check_admin_referer('rsms_campaign
         </td></tr>
         <tr><th>پارامترها (به ترتیب)</th><td>
           <div id="rsms-params-wrap">
-            <?php for($i=1;$i<=10;$i++) echo '<input type="text" class="rsms-input small rsms-param" name="p'.$i.'" placeholder="param'.$i.'" maxlength="38"> '; ?>
+            <?php for($i=1;$i<=10;$i++) echo '<input type="text" class="rsms-input small rsms-param" name="p'.$i.'" placeholder="param'.$i.'" maxlength="40"> '; ?>
           </div>
           <small>حداکثر ۱۰ پارامتر؛ هر پارامتر حداکثر ۳۸ کاراکتر.</small>
         </td></tr>

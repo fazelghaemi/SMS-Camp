@@ -14,12 +14,12 @@
 
   // Enforce max params 10 and maxlength 38
   function enforceLimits(){
-    $('.rsms-param').attr('maxlength',38);
+    $('.rsms-param').attr('maxlength',40);
     var $wrap = $('#rsms-params-wrap');
     var count = $wrap.find('input.rsms-param').length;
     if(count<10){
       for(var i=count+1;i<=10;i++){
-        $wrap.append('<input type="text" class="rsms-input small rsms-param" name="p'+i+'" placeholder="param'+i+'" maxlength="38" /> ');
+        $wrap.append('<input type="text" class="rsms-input small rsms-param" name="p'+i+'" placeholder="param'+i+'" maxlength="40" /> ');
       }
     }
   }
