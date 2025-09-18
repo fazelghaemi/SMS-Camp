@@ -1,0 +1,1 @@
+<?php if (!defined('ABSPATH')) exit; ?><div class="wrap rsms-rtl"><h1 class="rsms-title">ارسال زنده</h1><div class="rsms-card"><p>برای تست سریع به چند شماره ارسال کنید.</p></div></div>

@@ -1,0 +1,1 @@
+console.log('ReadySMS admin loaded (fa-IR)');

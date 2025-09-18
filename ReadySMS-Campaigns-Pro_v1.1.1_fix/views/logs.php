@@ -1,0 +1,3 @@
+<?php if (!defined('ABSPATH')) exit;
+global $wpdb; $tbl=$wpdb->prefix.'rsms_logs'; $rows=$wpdb->get_results("SELECT * FROM $tbl ORDER BY id DESC LIMIT 200", ARRAY_A) ?: [];
+?><div class="wrap rsms-rtl"><h1 class="rsms-title">گزارش‌ها</h1><table class="widefat striped"><thead><tr><th>ID</th><th>سطح</th><th>پیام</th><th>Context</th><th>تاریخ</th></tr></thead><tbody><?php foreach($rows as $r){ echo '<tr><td>'.intval($r['id']).'</td><td>'.esc_html($r['level']).'</td><td>'.esc_html($r['message']).'</td><td><code>'.esc_html($r['context_json']).'</code></td><td>'.esc_html($r['created_at']).'</td></tr>'; } ?></tbody></table></div>
